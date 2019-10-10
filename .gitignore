@@ -9,6 +9,7 @@ __pycache__/
 # Distribution / packaging
 .Python
 FeriaCultiva/FeriaCultiva/settings/local.py
+FeriaCultiva/media/
 build/
 develop-eggs/
 dist/
