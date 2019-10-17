@@ -12,45 +12,36 @@
             <div class="col-4"></div>
             <div class="col-4">
                 <form method="POST" enctype="multipart/form-data">
-                {% csrf_token %}
-                    <!-- <h2>Registro</h2>
+                    {% csrf_token %}
+                    <h2>Registro</h2>
                     <div class="form-group">
-                        <label for="username">Nombre de Usuario</label>
-                        <input type="text" class="form-control" id="username" placeholder="Ingrese Nombre de Usuario" name="username">
+                        <label>Nombre de Usuario</label>
+                        <input type="text" class="form-control" placeholder="Ingrese Nombre de Usuario" name="username">
                     </div>
                     <div class="form-group">
-                        <label for="first_name">Nombre</label>
-                        <input type="text" class="form-control" id="first_name" placeholder="Ingrese Nombre" name="first_name">
+                        <label>Nombre</label>
+                        <input type="text" class="form-control" placeholder="Ingrese Nombre" name="first_name">
                     </div>
                     <div class="form-group">
-                        <label for="last_name">Apellido</label>
-                        <input type="text" class="form-control" id="last_name" placeholder="Ingrese Apellido" name="last_name">
+                        <label>Apellido</label>
+                        <input type="text" class="form-control" placeholder="Ingrese Apellido" name="last_name">
                     </div>
                     <div class="form-group">
-                        <label for="email">Correo electrónico</label>
-                        <input type="text" class="form-control" id="email" placeholder="Ingrese Correo" name="email">
+                        <label>Correo electrónico</label>
+                        <input type="text" class="form-control" placeholder="Ingrese Correo" name="email">
                     </div>
                     <div class="form-group">
-                        <label for="direccion">Direccion</label>
-                        <input type="text" class="form-control" id="direccion" placeholder="Ingrese Direccion" name="direccion">
+                        <label>Direccion</label>
+                        <input type="text" class="form-control" placeholder="Ingrese Direccion" name="direccion">
                     </div>
                     <div class="form-group">
-                        <label for="telefono">Telefono</label>
-                        <input type="text" class="form-control" id="telefono" placeholder="Ingrese Nº Telefono" name="telefono">
+                        <label>Contraseña</label>
+                        <input type="password" class="form-control" placeholder="Ingrese Contraseña" name="password">
                     </div>
-                    <div class="form-group">
-                        <label for="pwd">Contraseña</label>
-                        <input type="password" class="form-control" id="pwd" placeholder="Ingrese Contraseña" name="password">
-                    </div>
-                    <div class="form-group">
-                        <label for="pwd">Confirmar Contraseña</label>
-                        <input type="password" class="form-control" id="pwd2" placeholder="Ingrese Contraseña" name="password2">
-                    </div> -->
-                    {{form.as_p}}
+                    {{form.errors}}
+                    <!-- {{form.as_p}} {{form.errors}} -->
                     <button type="submit" class="btn btn-primary">Submit</button>
                 </form>
-
-            
             </div>
             <div class="col-4"></div>
 
