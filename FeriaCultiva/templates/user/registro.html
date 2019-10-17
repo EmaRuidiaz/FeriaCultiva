@@ -1,9 +1,61 @@
 <!DOCTYPE html>
 <html>
 <head>
-
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </head>
 <body>
-    <h1>LALALALALALALA</h1>
+    <div class="conteiner7">
+        <div class="row">
+            <div class="col-4"></div>
+            <div class="col-4">
+                <form method="POST" enctype="multipart/form-data">
+                {% csrf_token %}
+                    <!-- <h2>Registro</h2>
+                    <div class="form-group">
+                        <label for="username">Nombre de Usuario</label>
+                        <input type="text" class="form-control" id="username" placeholder="Ingrese Nombre de Usuario" name="username">
+                    </div>
+                    <div class="form-group">
+                        <label for="first_name">Nombre</label>
+                        <input type="text" class="form-control" id="first_name" placeholder="Ingrese Nombre" name="first_name">
+                    </div>
+                    <div class="form-group">
+                        <label for="last_name">Apellido</label>
+                        <input type="text" class="form-control" id="last_name" placeholder="Ingrese Apellido" name="last_name">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Correo electrónico</label>
+                        <input type="text" class="form-control" id="email" placeholder="Ingrese Correo" name="email">
+                    </div>
+                    <div class="form-group">
+                        <label for="direccion">Direccion</label>
+                        <input type="text" class="form-control" id="direccion" placeholder="Ingrese Direccion" name="direccion">
+                    </div>
+                    <div class="form-group">
+                        <label for="telefono">Telefono</label>
+                        <input type="text" class="form-control" id="telefono" placeholder="Ingrese Nº Telefono" name="telefono">
+                    </div>
+                    <div class="form-group">
+                        <label for="pwd">Contraseña</label>
+                        <input type="password" class="form-control" id="pwd" placeholder="Ingrese Contraseña" name="password">
+                    </div>
+                    <div class="form-group">
+                        <label for="pwd">Confirmar Contraseña</label>
+                        <input type="password" class="form-control" id="pwd2" placeholder="Ingrese Contraseña" name="password2">
+                    </div> -->
+                    {{form.as_p}}
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+
+            
+            </div>
+            <div class="col-4"></div>
+
+        </div>
+    </div>
+    
 </body>
 </html>

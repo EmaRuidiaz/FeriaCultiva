@@ -9,8 +9,8 @@ from .models import User
 class CreateUser(CreateView):
     model = User
     template_name = 'user/registro.html'
-    # succes_url = reverse_lazy('usuario:home')
-    fields = '__all__'
+    succes_url = reverse_lazy('home.html')
+    fields = ['username','password', 'email', 'first_name', 'last_name', 'direccion', 'telefono']
 
 class UpdateUser(UpdateView):
     model = User
