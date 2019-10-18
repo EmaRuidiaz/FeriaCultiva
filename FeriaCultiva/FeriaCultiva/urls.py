@@ -24,4 +24,6 @@ urlpatterns = [
      path('', views.Inicio, name="start"),
 
     path('historia/', include('apps.historia.urls')),
+
+    path('publicaciones/', include('apps.publicaciones.urls')),
 ]
