@@ -1,3 +1,6 @@
+{% extends 'base.html' %}
+{% block contenido %}
+
 {% if object_list|length != 0 %}
 	{% for p in object_list %}
 	<div class="row">
@@ -11,3 +14,5 @@
 {% else %}
 	<label for="">No publicaciones</label>
 {% endif %}
+
+{% endblock contenido %}

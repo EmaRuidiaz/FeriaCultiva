@@ -1,3 +1,7 @@
+{% extends 'base.html' %}
+
+{% block contenido %}
+
 {% if object_list|length != 0 %}
 	{% for p in object_list %}
 	<label for="">{{p.historia}}</label>
@@ -7,3 +11,5 @@
 {% else %}
 	<label for="">No historias</label>
 {% endif %}
+
+{% endblock contenido %}
