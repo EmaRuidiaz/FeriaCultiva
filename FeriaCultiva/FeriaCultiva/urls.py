@@ -21,7 +21,6 @@ urlpatterns = [
     path('admin/', admin.site.urls),
 
     #URL Principal
-
     path('', views.Inicio, name="start"),
   
     path('registro/', include('apps.user.urls')),
@@ -29,5 +28,7 @@ urlpatterns = [
     path('historia/', include('apps.historia.urls')),
 
     path('publicaciones/', include('apps.publicaciones.urls')),
+
+    path('producto/', include('apps.producto.urls')),
 
 ]
