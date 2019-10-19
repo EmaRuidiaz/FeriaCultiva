@@ -12,6 +12,6 @@ class CreateUser(CreateView):
     model = User
     template_name = 'user/registro.html'
     #form_class = RegistroForm
-    succes_url = reverse_lazy('home.html')
+    succes_url = reverse_lazy('start.html')
     fields = ['username','first_name','last_name','email','password','direccion']
 
