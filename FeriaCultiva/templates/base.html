@@ -1,0 +1,306 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="es">
+ <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximun-scale=1.0, minimun-scale=1.0, shrink-to-fit=no">
+
+    <!-- Estilo css-->
+    <link rel="stylesheet" type="text/css" href="{% static 'css/header.css' %}" >
+    <link rel="stylesheet" type="text/css" href="{% static 'css/footer.css' %}">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- Latest compiled and minified CSS -->
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" comrossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+
+    <!-- FONTAWSOME -->
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+     
+    <!-- Fuente google font-->
+     <link href="https://fonts.googleapis.com/css?family=Fredoka+One&display=swap" rel="stylesheet">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <link rel="icon" href="{% static 'img/logo.png' %}" type="image/x-icon">
+    <title>Feria Cultiva</title>
+  </head>
+
+<body>
+
+
+    <div class="container-fluid">
+        
+       <div class="row">
+
+            <!-- Header -->
+            <header id="mainHeader" >
+                
+                <div id="headerContainer" class="container-fluid" >
+                    <div class="row" >
+                        <!-- acá va el logo de feria cultiva con el enlace a la página de inicio -->
+                            <div class="col-md-4 col-sm-4 col-xs-7">
+                                <a href="#">
+                                   <img id="logo"  src="{% static 'img/logofcchico.png' %}" width="250" height="100"  class="d-inline-block align-top" alt="Feria Cultiva" style="padding-left: 100px;">
+                                </a>
+                             </div>
+                         
+                         <!-- buscador -->
+                            <div id="searchContainer" class="col-lg-5 col-md-4 col-sm-5 ">
+                              <form class="form-inline md-form form-sm ">
+                                <input class="form-control form-control-sm ml-3 w-75" type="text" placeholder="Buscar" aria-label="Buscar">
+                               </form>
+                            </div>
+
+                           <!-- navbar-->
+
+                      <div id="sessionContainer" class="col-xs-4 d-inline-block" >
+                          <div class="dropdown">
+                                   <button type="button" style="background-color: #fff; border: none;">
+                                    <img id="logo"  src="{% static 'icon/cart.png' %}" width="50" height="30"  class="d-inline-block " alt="Feria Cultiva"> Mis reservas
+                                   </button>
+                                    <button type="button" class="btn dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <span class="sr-only">Toggle Dropdown</span>
+                                    </button>
+                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                      <a class="dropdown-item" href="#">Action</a>
+                                      <a class="dropdown-item" href="#">Another action</a>
+                                      <a class="dropdown-item" href="#">Something else here</a>
+                                    </div>
+                              </div>
+
+                              <div class="dropdown" >
+                                     <button type="button" style="background-color: #fff; border: none;">
+                                      <img id="logo"  src="{% static 'icon/users.png' %}" width="50" height="30"  class="d-inline-block " alt="Feria Cultiva"> Usuario
+                                     </button>
+
+                                      <button type="button" class="btn dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                       <span class="sr-only">Toggle Dropdown</span>
+                                      </button>
+
+                                      <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                            <a class="dropdown-item" href="#">Action</a>
+                                            <a class="dropdown-item" href="#">Another action</a>
+                                            <a class="dropdown-item" href="#">Something else here</a>
+                                      </div>
+                              </div>
+                           
+                    </div>
+
+
+                            <!-- navbar -->
+                         <div class="container-fluid" id="header-navegación">
+                           <nav class="navbar navbar-expand-lg navbar-light bg-personal navbar-expand-sm" >
+                                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                                  <span class="navbar-toggler-icon"></span>
+                                </button>
+
+
+                              <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                                    <ul class="navbar-nav mx-auto" >
+                                      <li class="nav-item active">
+                                        <a class="nav-link" href="#">Inicio<span class="sr-only">(current)</span></a>
+                                      </li>
+                                      
+                                      <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                          Acerca de Feria Cultiva
+                                        </a>
+                                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                          <a class="dropdown-item" href="#">Action</a>
+                                          <a class="dropdown-item" href="#">Another action</a>
+                                          <a class="dropdown-item" href="#">Something else here</a>
+                                        </div>
+                                      </li>
+                                      <li class="nav-item">
+                                        <a class="nav-link" href="#">Productos</a>
+                                      </li>
+                                      <li class="nav-item">
+                                        <a class="nav-link" href="#">Feriante</a>
+                                      </li>
+                                      <li class="nav-item">
+                                        <a class="nav-link" href="#">Foro</a>
+                                      </li>
+                                    </ul>
+                                  </div>
+                                </nav>
+                               </div>
+        
+                   </div>
+
+            </header>
+    
+       </div>
+
+    </div>
+
+
+
+
+        {% block contenido %}       
+
+        {% endblock contenido %}
+
+
+
+
+
+<footer class="footer page-footer font-small stylish-color-dark pt-4 container-fluid">
+
+  <!-- Footer Links -->
+  <div class="container text-center text-md-left">
+
+    <!-- Grid row -->
+    <div class="row">
+
+      <!-- Grid column -->
+            <div class="col-md-4 mx-auto">
+
+              <!-- Content -->
+              <h4 class="font-weight-bold text-uppercase mt-3 mb-4">Feria Cultiva</h4>
+              <p class="footer-descripcion">El patio Ambay del CeCuAl (Santa María de Oro 471) es el lugar donde se lleva a cabo la feria todos los sábados de 9 a 13 hs. En él se comercializan productos hortícolas agroecológicos, productos primarios con valor agregado y productos gastronómicos vinculados con la alimentación saludable, cosmética natural y de diseños sustentables. ¡Vení a conocernos!</p>
+              <h4>#CulturaColaborativa</h4>
+          </div>
+      <!-- Grid column -->
+
+                   <hr class="clearfix w-100 d-md-none">
+
+                  <!-- Grid column -->
+                  <div class="col-md-2 mx-auto">
+
+                    <!-- Links -->
+                    <h4 class="font-weight-bold text-uppercase mt-3 mb-4">SECCIONES</h4>
+
+                    <ul class="list-unstyled">
+                      <li>
+                        <a href="#!">¿Qué es Feria Cultiva?</a>
+                      </li>
+                      <br>
+                      <li>
+                        <a href="#!">Productos</a>
+                      </li>
+                      <br>
+                      <li>
+                        <a href="#!">Feriantes</a>
+                      </li>
+                      <br>
+                      <li>
+                        <a href="#!">Foro</a>
+                      </li>
+                    </ul>
+
+                  </div>
+                  <!-- Grid column -->
+
+                  <hr class="clearfix w-100 d-md-none">
+
+                  <!-- Grid column -->
+                  <div class="col-md-2 mx-auto">
+
+                    <!-- Links -->
+                    <h4 class="font-weight-bold text-uppercase mt-3 mb-4">CATEGORIAS</h4>
+
+                    <ul class="list-unstyled">
+                      <li>
+                        <a href="#!">Productos Hortícolas</a>
+                      </li>
+                      <br>
+                      <li>
+                        <a href="#!">Ornamentales</a>
+                      </li>
+                      <br>
+                      <li>
+                        <a href="#!">Alimentación Saludable</a>
+                      </li>
+                      <br>
+                      <li>
+                        <a href="#!">Almacen Natural</a>
+                      </li>
+                    </ul>
+
+                  </div>
+                  <!-- Grid column -->
+
+                </div>
+                <!-- Grid row -->
+
+              </div>
+              <!-- Footer Links -->
+
+              <hr>
+
+              <!-- Call to action -->
+              <ul class="list-unstyled list-inline text-center py-2">
+                <li class="list-inline-item">
+                  <h5 class="mb-1">¿Ya tenes una cuenta?</h5>
+                </li>
+                <li class="list-inline-item">
+                  <a href="#!" class="btn btn-danger btn-rounded reg">Crear cuenta</a>
+                </li>
+              </ul>
+              <!-- Call to action -->
+
+              <hr>
+
+              <!-- Social buttons -->
+            <ul class="list-unstyled list-inline text-center">
+              <li class="list-inline-item">
+                <a href="https://www.facebook.com/events/428020647782628/?ti=as" class="btn-floating btn-fb mx-1">
+                   <img id="logo"  src="{% static 'icon/facebook.png' %}" width="30" height="30"  class="d-inline-block align-top" alt="Feria Cultiva">
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a class="btn-floating btn-tw mx-1 ">
+                  <img id="logo"  src="{% static 'icon/instagram.png' %}" width="30" height="30"  class="d-inline-block align-top" alt="Feria Cultiva">
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a class="btn-floating btn-gplus mx-1">
+                  <img id="logo"  src="{% static 'icon/whatsapp.png' %}" width="30" height="30"  class="d-inline-block align-top" alt="Feria Cultiva">
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="https://www.google.com/maps/place/Centro+Cultural+Alternativo,+Sta+Mar%C3%ADa+de+Oro+471,+H3500BKI+Resistencia,+Chaco/@-27.4540829,-58.9913199,17z/data=!4m2!3m1!1s0x94450c8c9097788f:0xab901c770d860b3e" class="btn-floating btn-li mx-1">
+                   <img id="logo"  src="{% static 'icon/placeholder.png' %}" width="30" height="30"  class="d-inline-block align-top" alt="Feria Cultiva">
+                </a>
+              </li>
+             </ul>
+  <!-- Social buttons -->
+
+  <!-- Copyright -->
+        <div class="footer-copyright text-center py-3">© 2019 Desarrollado por:
+          <a href="https://mdbootstrap.com/education/bootstrap/"> IT4Connect</a>
+        </div>
+        <!-- Copyright -->
+
+      </footer>
+<!-- Footer -->
+
+
+
+</div>
+  
+   
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
+
+
+      
+
+      
+              
+            
