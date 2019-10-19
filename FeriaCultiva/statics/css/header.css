@@ -1,0 +1,58 @@
+body {
+    
+}
+
+
+#mainHeader {
+    width: 100%;
+    z-index: 900
+    box-shadow: 0px 1px 5px 0px rgba(50, 50, 50, 0.1); 
+  
+     }
+
+
+#headerContainer {
+    position: relative;
+    right: 10px;
+    left: 10px;
+    top: 0;
+    padding: 40px 0 10px 10px;
+    font-family: 'Fredoka One', cursive;
+        }
+
+
+ #sessionContainer{
+   text-align: right;
+   
+    top: 0;
+    font-size: 12px;
+}
+
+#searchContainer{
+	position: relative;
+}
+
+.navbar-estilo{
+	font-size: 20px;
+
+}
+
+#headerContainer.searchButton {
+    cursor: pointer;
+}
+
+#header-navegación{
+	font-size: 20px;
+	color: red;
+
+	 }
+
+.personal  {
+	background-color: #fff ;
+
+	}
+
+.navbar-nava .navbar-item{
+	color: red;
+}
+
