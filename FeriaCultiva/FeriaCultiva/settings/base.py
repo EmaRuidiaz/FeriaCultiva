@@ -45,6 +45,7 @@ INSTALLED_APPS = [
     'apps.reserva',
     'apps.historia',
     'apps.publicaciones',
+    'apps.evento',
 ]
 
 AUTH_USER_MODEL = 'user.User'

@@ -30,4 +30,6 @@ urlpatterns = [
 
     path('publicaciones/', include('apps.publicaciones.urls')),
 
+    path('eventos/', include('apps.evento.urls')),
+
 ]
