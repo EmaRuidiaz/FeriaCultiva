@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximun-scale=1.0, minimun-scale=1.0, shrink-to-fit=no">
 
     <!-- Estilo css-->
-    <link rel="stylesheet" type="text/css" href="{% static 'css/header.css' %}" >
+    <link rel="stylesheet" type="text/css" href="{% static 'css/head.css' %}" >
     <link rel="stylesheet" type="text/css" href="{% static 'css/footer.css' %}">
 
     <!-- Bootstrap CSS -->
@@ -25,7 +25,7 @@
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
      
     <!-- Fuente google font-->
-     <link href="https://fonts.googleapis.com/css?family=Fredoka+One&display=swap" rel="stylesheet">
+     <link href="https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap" rel="stylesheet">
 
     <!-- Latest compiled and minified JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
@@ -37,110 +37,113 @@
 <body>
 
 
-    <div class="container-fluid">
-        
-       <div class="row">
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg bg-light navbar-light fixed-top">
+  <div class="container">
+    <a class="navbar-brand" href="#">
+      <img id="logo"  src="{% static 'img/letrasverdes.png' %}"  class="d-inline-block align-top" alt="Feria Cultiva" style="padding-left: 100px;">
 
-            <!-- Header -->
-            <header id="mainHeader" >
-                
-                <div id="headerContainer" class="container-fluid" >
-                    <div class="row" >
-                        <!-- acá va el logo de feria cultiva con el enlace a la página de inicio -->
-                            <div class="col-md-4 col-sm-4 col-xs-7">
-                                <a href="#">
-                                   <img id="logo"  src="{% static 'img/logofcchico.png' %}" width="250" height="100"  class="d-inline-block align-top" alt="Feria Cultiva" style="padding-left: 100px;">
-                                </a>
-                             </div>
-                         
-                         <!-- buscador -->
-                            <div id="searchContainer" class="col-lg-5 col-md-4 col-sm-5 ">
-                              <form class="form-inline md-form form-sm ">
-                                <input class="form-control form-control-sm ml-3 w-75" type="text" placeholder="Buscar" aria-label="Buscar">
-                               </form>
-                            </div>
+    </a>
 
-                           <!-- navbar-->
-
-                      <div id="sessionContainer" class="col-xs-4 d-inline-block" >
-                          <div class="dropdown">
-                                   <button type="button" style="background-color: #fff; border: none;">
-                                    <img id="logo"  src="{% static 'icon/cart.png' %}" width="50" height="30"  class="d-inline-block " alt="Feria Cultiva"> Mis reservas
-                                   </button>
-                                    <button type="button" class="btn dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                        <span class="sr-only">Toggle Dropdown</span>
-                                    </button>
-                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                      <a class="dropdown-item" href="#">Action</a>
-                                      <a class="dropdown-item" href="#">Another action</a>
-                                      <a class="dropdown-item" href="#">Something else here</a>
-                                    </div>
-                              </div>
-
-                              <div class="dropdown" >
-                                     <button type="button" style="background-color: #fff; border: none;">
-                                      <img id="logo"  src="{% static 'icon/users.png' %}" width="50" height="30"  class="d-inline-block " alt="Feria Cultiva"> Usuario
-                                     </button>
-
-                                      <button type="button" class="btn dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                       <span class="sr-only">Toggle Dropdown</span>
-                                      </button>
-
-                                      <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                            <a class="dropdown-item" href="#">Action</a>
-                                            <a class="dropdown-item" href="#">Another action</a>
-                                            <a class="dropdown-item" href="#">Something else here</a>
-                                      </div>
-                              </div>
-                           
-                    </div>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
 
 
-                            <!-- navbar -->
-                         <div class="container-fluid" id="header-navegación">
-                           <nav class="navbar navbar-expand-lg navbar-light bg-personal navbar-expand-sm" >
-                                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                                  <span class="navbar-toggler-icon"></span>
-                                </button>
 
 
-                              <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                                    <ul class="navbar-nav mx-auto" >
-                                      <li class="nav-item active">
-                                        <a class="nav-link" href="#">Inicio<span class="sr-only">(current)</span></a>
-                                      </li>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav ml-auto" >
+      
+             <li class="nav-item active">
+                <a class="nav-link estilo-nav" href="#" style=" color: #2c5d63; font-weight: bold; font-size: 15px; font-family: 'Roboto Slab';" >INICIO<span class="sr-only">(current)</span></a>
+              </li>
                                       
-                                      <li class="nav-item dropdown">
-                                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                          Acerca de Feria Cultiva
-                                        </a>
-                                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                          <a class="dropdown-item" href="#">Action</a>
-                                          <a class="dropdown-item" href="#">Another action</a>
-                                          <a class="dropdown-item" href="#">Something else here</a>
-                                        </div>
-                                      </li>
-                                      <li class="nav-item">
-                                        <a class="nav-link" href="#">Productos</a>
-                                      </li>
-                                      <li class="nav-item">
-                                        <a class="nav-link" href="#">Feriante</a>
-                                      </li>
-                                      <li class="nav-item">
-                                        <a class="nav-link" href="#">Foro</a>
-                                      </li>
-                                    </ul>
+              <li class="nav-item dropdown">
+                   <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+                   style=" color: #2c5d63; font-weight: bold; font-size: 15px; font-family: 'Roboto Slab';">  ACERCA DE FERIA CULTIVA </a>
+
+                                       
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="#"style=" color: #2c5d63; font-weight: bold; font-size: 15px; font-family: 'Roboto Slab';" >SOBRE FERIA CULTIVA</a>
+
+                        <a class="dropdown-item" href="#"style=" color: #2c5d63; font-weight: bold; font-size: 15px; font-family: 'Roboto Slab';" >AMBIENTE Y SALUD</a>
+
+                        <a class="dropdown-item" href="#"style=" color: #2c5d63; font-weight: bold; font-size: 15px; font-family: 'Roboto Slab'; background-color: #f5f5f5"; >PRÓXIMAS FECHAS </a>
+                    </div>
+              </li>
+              <li class="nav-item">
+                        <a class="nav-link" href="#" style=" color:#2c5d63; font-weight: bold; font-size: 15px; font-family: 'Roboto Slab';">PRODUCTOS</a>
+              </li>
+
+              <li class="nav-item">
+                          <a class="nav-link" href="#" style=" color: #2c5d63; font-weight: bold; font-size: 15px; font-family: 'Roboto Slab';">FERIANTES</a>
+              </li>
+              <li class="nav-item">
+                            <a class="nav-link" href="#" style=" color: #2c5d63; font-weight: bold; font-size: 15px; font-family: 'Roboto Slab';">FORO</a>
+              </li>
+              </li>
+              <li class="nav-item">
+                                          
+                     <div id="sessionContainer" >
+                                     <!-- iconos-->
+                         <div class="dropdown follow u-hide-before-md">
+
+                             
+                              <a href="#" class="js-modal-open js-toggle-cart" data-toggle="#modal-cart">
+                                  <svg class="svg-icon icon-inline" viewBox="0 0 20 20">
+                                        <path fill="none" d="M17.72,5.011H8.026c-0.271,0-0.49,0.219-0.49,0.489c0,0.271,0.219,0.489,0.49,0.489h8.962l-1.979,4.773H6.763L4.935,5.343C4.926,5.316,4.897,5.309,4.884,5.286c-0.011-0.024,0-0.051-0.017-0.074C4.833,5.166,4.025,4.081,2.33,3.908C2.068,3.883,1.822,4.075,1.795,4.344C1.767,4.612,1.962,4.853,2.231,4.88c1.143,0.118,1.703,0.738,1.808,0.866l1.91,5.661c0.066,0.199,0.252,0.333,0.463,0.333h8.924c0.116,0,0.22-0.053,0.308-0.128c0.027-0.023,0.042-0.048,0.063-0.076c0.026-0.034,0.063-0.058,0.08-0.099l2.384-5.75c0.062-0.151,0.046-0.323-0.045-0.458C18.036,5.092,17.883,5.011,17.72,5.011z"></path>
+                                        <path fill="none" d="M8.251,12.386c-1.023,0-1.856,0.834-1.856,1.856s0.833,1.853,1.856,1.853c1.021,0,1.853-0.83,1.853-1.853S9.273,12.386,8.251,12.386z M8.251,15.116c-0.484,0-0.877-0.393-0.877-0.874c0-0.484,0.394-0.878,0.877-0.878c0.482,0,0.875,0.394,0.875,0.878C9.126,14.724,8.733,15.116,8.251,15.116z"></path>
+                                        <path fill="none" d="M13.972,12.386c-1.022,0-1.855,0.834-1.855,1.856s0.833,1.853,1.855,1.853s1.854-0.83,1.854-1.853S14.994,12.386,13.972,12.386z M13.972,15.116c-0.484,0-0.878-0.393-0.878-0.874c0-0.484,0.394-0.878,0.878-0.878c0.482,0,0.875,0.394,0.875,0.878C14.847,14.724,14.454,15.116,13.972,15.116z"></path>
+                                     </svg>
+                             </a>
+                                 
+                    
+
+                                <button type="button" class="btn dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                  <span class="sr-only">Toggle Dropdown</span>
+                                </button>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                   <a class="dropdown-item" href="#"
+                                    style=" color: #a9c52f; font-weight: bold;  font-size: 15px; font-family: 'Roboto Slab';">Mis reservas</a>              
                                   </div>
-                                </nav>
-                               </div>
-        
-                   </div>
+                                </div>
 
-            </header>
-    
-       </div>
+                                  
+              </li>
 
-    </div>
+              <li class="nav-item">
+                      <div class="dropdown" >
+                        <a href="#" class="js-modal-open js-toggle-cart" data-toggle="#modal-cart">
+                                    <svg class="svg-icon" viewBox="0 0 20 20">
+                                    <path fill="none" d="M10,10.9c2.373,0,4.303-1.932,4.303-4.306c0-2.372-1.93-4.302-4.303-4.302S5.696,4.223,5.696,6.594C5.696,8.969,7.627,10.9,10,10.9z M10,3.331c1.801,0,3.266,1.463,3.266,3.263c0,1.802-1.465,3.267-3.266,3.267c-1.8,0-3.265-1.465-3.265-3.267C6.735,4.794,8.2,3.331,10,3.331z"></path>
+                                    <path fill="none" d="M10,12.503c-4.418,0-7.878,2.058-7.878,4.685c0,0.288,0.231,0.52,0.52,0.52c0.287,0,0.519-0.231,0.519-0.52c0-1.976,3.132-3.646,6.84-3.646c3.707,0,6.838,1.671,6.838,3.646c0,0.288,0.234,0.52,0.521,0.52s0.52-0.231,0.52-0.52C17.879,14.561,14.418,12.503,10,12.503z"></path>
+                                  </svg>
+
+                        </a>
+
+                        <button type="button" class="btn dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                         <span class="sr-only"></span>
+                        </button>
+
+                         <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                              <a class="dropdown-item" href="#"
+                              style=" color: #a9c52f; font-weight: bold;   font-size: 15px; font-family: 'Roboto Slab';">Crear Cuenta</a>
+                               <a class="dropdown-item" href="#"
+                               style=" color: #a9c52f; font-weight: bold;  font-size: 15px; font-family: 'Roboto Slab';">Iniciar sesión</a>
+                                           
+                          </div>
+                  </div>
+                             
+                  </div>
+                                          
+            </li>
+                                                     
+          </ul>
+
+      </div>
+  </div>  
+</nav>
 
 
 
@@ -150,11 +153,7 @@
         {% endblock contenido %}
 
 
-
-
-
-<footer class="footer page-footer font-small stylish-color-dark pt-4 container-fluid">
-
+<footer class="footer page-footer font-small stylish-color-dark pt-3 container-fluid">
   <!-- Footer Links -->
   <div class="container text-center text-md-left">
 
@@ -171,7 +170,7 @@
           </div>
       <!-- Grid column -->
 
-                   <hr class="clearfix w-100 d-md-none">
+               <hr class="clearfix w-100 d-md-none">
 
                   <!-- Grid column -->
                   <div class="col-md-2 mx-auto">
@@ -181,19 +180,19 @@
 
                     <ul class="list-unstyled">
                       <li>
-                        <a href="#!">¿Qué es Feria Cultiva?</a>
+                        <a href="#!" class="lista">¿Qué es Feria Cultiva?</a>
                       </li>
                       <br>
                       <li>
-                        <a href="#!">Productos</a>
+                        <a href="#!" class="lista">Productos</a>
                       </li>
                       <br>
                       <li>
-                        <a href="#!">Feriantes</a>
+                        <a href="#!" class="lista">Feriantes</a>
                       </li>
                       <br>
                       <li>
-                        <a href="#!">Foro</a>
+                        <a href="#!" class="lista">Foro</a>
                       </li>
                     </ul>
 
@@ -210,19 +209,19 @@
 
                     <ul class="list-unstyled">
                       <li>
-                        <a href="#!">Productos Hortícolas</a>
+                        <a href="#!" class="lista">Productos Hortícolas</a>
                       </li>
                       <br>
                       <li>
-                        <a href="#!">Ornamentales</a>
+                        <a href="#!" class="lista">Ornamentales</a>
                       </li>
                       <br>
                       <li>
-                        <a href="#!">Alimentación Saludable</a>
+                        <a href="#!"class="lista">Alimentación Saludable</a>
                       </li>
                       <br>
                       <li>
-                        <a href="#!">Almacen Natural</a>
+                        <a href="#!" class="lista">Almacen Natural</a>
                       </li>
                     </ul>
 
@@ -238,12 +237,12 @@
               <hr>
 
               <!-- Call to action -->
-              <ul class="list-unstyled list-inline text-center py-2">
+              <ul class="list-unstyled list-inline text-center py-1">
                 <li class="list-inline-item">
                   <h5 class="mb-1">¿Ya tenes una cuenta?</h5>
                 </li>
                 <li class="list-inline-item">
-                  <a href="#!" class="btn btn-danger btn-rounded reg">Crear cuenta</a>
+                  <a href="#!" style="color: #2c5d63">Crear cuenta</a>
                 </li>
               </ul>
               <!-- Call to action -->
@@ -254,22 +253,24 @@
             <ul class="list-unstyled list-inline text-center">
               <li class="list-inline-item">
                 <a href="https://www.facebook.com/events/428020647782628/?ti=as" class="btn-floating btn-fb mx-1">
-                   <img id="logo"  src="{% static 'icon/facebook.png' %}" width="30" height="30"  class="d-inline-block align-top" alt="Feria Cultiva">
+                   <svg class="svg-icon" viewBox="0 0 20 20">
+              <path fill="none" d="M10,0.5c-5.247,0-9.5,4.253-9.5,9.5c0,5.247,4.253,9.5,9.5,9.5c5.247,0,9.5-4.253,9.5-9.5C19.5,4.753,15.247,0.5,10,0.5 M10,18.637c-4.77,0-8.636-3.867-8.636-8.637S5.23,1.364,10,1.364S18.637,5.23,18.637,10S14.77,18.637,10,18.637 M10.858,7.949c0-0.349,0.036-0.536,0.573-0.536h0.719v-1.3H11c-1.38,0-1.866,0.65-1.866,1.743v0.845h-0.86V10h0.86v3.887h1.723V10h1.149l0.152-1.299h-1.302L10.858,7.949z"></path>
+            </svg>
                 </a>
               </li>
               <li class="list-inline-item">
                 <a class="btn-floating btn-tw mx-1 ">
-                  <img id="logo"  src="{% static 'icon/instagram.png' %}" width="30" height="30"  class="d-inline-block align-top" alt="Feria Cultiva">
+                  <svg class="svg-icon" viewBox="0 0 20 20">
+              <path fill="none" d="M9.969,0.594c-5.195,0-9.406,4.211-9.406,9.406c0,5.195,4.211,9.406,9.406,9.406c5.195,0,9.406-4.211,9.406-9.406C19.375,4.805,15.164,0.594,9.969,0.594 M9.969,18.552c-4.723,0-8.551-3.829-8.551-8.552s3.829-8.551,8.551-8.551S18.521,5.277,18.521,10S14.691,18.552,9.969,18.552 M12.534,5.724H7.403c-0.944,0-1.71,0.766-1.71,1.71v5.131c0,0.944,0.766,1.71,1.71,1.71h5.131c0.944,0,1.71-0.766,1.71-1.71V7.435C14.244,6.49,13.479,5.724,12.534,5.724M11.679,7.007h1.283V8.29h-1.283V7.007z M9.969,8.29c0.944,0,1.71,0.766,1.71,1.71s-0.766,1.71-1.71,1.71s-1.71-0.766-1.71-1.71S9.024,8.29,9.969,8.29 M13.39,12.565c0,0.472-0.384,0.854-0.855,0.854H7.403c-0.472,0-0.855-0.383-0.855-0.854V9.573h0.898C7.423,9.712,7.403,9.854,7.403,10c0,1.417,1.149,2.565,2.565,2.565c1.416,0,2.565-1.148,2.565-2.565c0-0.146-0.02-0.288-0.043-0.427h0.898V12.565z"></path>
+            </svg>
                 </a>
               </li>
-              <li class="list-inline-item">
-                <a class="btn-floating btn-gplus mx-1">
-                  <img id="logo"  src="{% static 'icon/whatsapp.png' %}" width="30" height="30"  class="d-inline-block align-top" alt="Feria Cultiva">
-                </a>
-              </li>
-              <li class="list-inline-item">
+            
+              <li class="list-inline-item ">
                 <a href="https://www.google.com/maps/place/Centro+Cultural+Alternativo,+Sta+Mar%C3%ADa+de+Oro+471,+H3500BKI+Resistencia,+Chaco/@-27.4540829,-58.9913199,17z/data=!4m2!3m1!1s0x94450c8c9097788f:0xab901c770d860b3e" class="btn-floating btn-li mx-1">
-                   <img id="logo"  src="{% static 'icon/placeholder.png' %}" width="30" height="30"  class="d-inline-block align-top" alt="Feria Cultiva">
+                   <svg class="svg-icon" viewBox="0 0 20 20">
+              <path d="M10,1.375c-3.17,0-5.75,2.548-5.75,5.682c0,6.685,5.259,11.276,5.483,11.469c0.152,0.132,0.382,0.132,0.534,0c0.224-0.193,5.481-4.784,5.483-11.469C15.75,3.923,13.171,1.375,10,1.375 M10,17.653c-1.064-1.024-4.929-5.127-4.929-10.596c0-2.68,2.212-4.861,4.929-4.861s4.929,2.181,4.929,4.861C14.927,12.518,11.063,16.627,10,17.653 M10,3.839c-1.815,0-3.286,1.47-3.286,3.286s1.47,3.286,3.286,3.286s3.286-1.47,3.286-3.286S11.815,3.839,10,3.839 M10,9.589c-1.359,0-2.464-1.105-2.464-2.464S8.641,4.661,10,4.661s2.464,1.105,2.464,2.464S11.359,9.589,10,9.589"></path>
+            </svg>
                 </a>
               </li>
              </ul>
@@ -277,7 +278,7 @@
 
   <!-- Copyright -->
         <div class="footer-copyright text-center py-3">© 2019 Desarrollado por:
-          <a href="https://mdbootstrap.com/education/bootstrap/"> IT4Connect</a>
+          <a href="https://mdbootstrap.com/education/bootstrap/" class="lista"> IT4Connect</a>
         </div>
         <!-- Copyright -->
 
@@ -286,16 +287,15 @@
 
 
 
-</div>
-  
-   
-
     <!-- Optional JavaScript -->
+    
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
   </body>
+
+
 </html>
 
 
