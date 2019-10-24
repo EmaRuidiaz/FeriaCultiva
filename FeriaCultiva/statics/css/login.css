@@ -1,7 +1,6 @@
 
 .principal {
-	background-color: #f5f5f5;
-	font-family: 'Roboto Slab', serif;
+	background-image: url({% static 'img/back.png' %});
 	
 }
 #conteinerlog {
