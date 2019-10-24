@@ -29,7 +29,7 @@
 							{% endif %}
 							<form action="{% url 'login' %}" method="POST">{% csrf_token %}
 								<div class="form-group">
-								    <label for="exampleInputEmail1">Nombre de Usuario</label>
+								    <label for="exampleInputEmail1">Nombre de Usuario o Correo electrónico</label>
 								    <input type="text" class="form-control" name="username" aria-describedby="emailHelp" placeholder="Ingrese usuario">
 								    <small id="emailHelp" class="form-text text-muted">No compartiremos tu direccion de correo con nadie más.</small>
 								  </div>
