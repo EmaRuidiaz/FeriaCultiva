@@ -46,6 +46,8 @@ INSTALLED_APPS = [
     'apps.pedido',
     'apps.producto',
     'apps.reserva',
+    'apps.historia',
+    'apps.publicaciones',
 ]
 
 AUTH_USER_MODEL = 'user.User'
