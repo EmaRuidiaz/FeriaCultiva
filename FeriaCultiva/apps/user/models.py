@@ -24,6 +24,3 @@ class User(AbstractUser):
 	)
 
 	direccion = models.CharField(max_length=200)
-
-	USERNAME_FIELD = 'username'
-	REQUIRED_FIELD = ['firs_name', 'last_name', 'email', 'direccion', 'telefono'] #campos requeridos para el registro

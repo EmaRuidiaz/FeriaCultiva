@@ -8,10 +8,9 @@ from apps.user.forms import RegistroForm
 
 # Create your views here.
 
-class CreateUser(CreateView):
-    model = User
-    template_name = 'user/registro.html'
-    #form_class = RegistroForm
-    succes_url = reverse_lazy('start.html')
-    fields = ['username','first_name','last_name','email','password','direccion']
+class AgregarUser(LoginRequiredMixin,CreateView): #Vistas basadas en clases
+	model = User
+	template_name = 'User/agregarUser.html'
+	fields = ['username','first_name','last_name','password','es_empresa','foto_perfil','email','direccion']
+	success_url = reverse_lazy('feriante:agregar')
 
